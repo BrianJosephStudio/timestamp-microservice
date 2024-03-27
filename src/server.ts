@@ -3,6 +3,10 @@ import { Request, Response } from 'express';
 const express = require("express")
 const app = express()
 
+app.get("/", (req: Request, res: Response) => {
+    res.redirect("/api")
+})
+
 app.get("/api/:date?", (req: Request, res: Response) => {
     const dateParam = req.params.date
 
