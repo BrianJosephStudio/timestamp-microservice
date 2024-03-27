@@ -2,6 +2,9 @@ require("dotenv").config()
 import { Request, Response } from 'express';
 const express = require("express")
 const app = express()
+const cors = require("cors")
+
+app.use(cors())
 
 app.get("/", (req: Request, res: Response) => {
     res.redirect("/api")
@@ -20,11 +23,11 @@ app.get("/api/:date?", (req: Request, res: Response) => {
         paramDate = new Date(dateParamAsNumber)
     }
 
-    if ( dateParam && !isInt && !isNaN ) {
+    if (dateParam && !isInt && !isNaN) {
         paramDate = new Date(dateParam)
     }
 
-    if ( dateParam && !isInt && isNaN ) {
+    if (dateParam && !isInt && isNaN) {
         return res.json({ error: "Invalid Date" })
     }
 
