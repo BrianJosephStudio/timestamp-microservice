@@ -1,3 +1,4 @@
+require("dotenv").config()
 import { Request, Response } from 'express';
 const express = require("express")
 const app = express()
@@ -29,6 +30,7 @@ app.get("/api/:date?", (req: Request, res: Response) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log("Listening on 3000")
+const port = process.env.PORT
+app.listen(port, () => {
+    console.log(`Listening on ${port}`)
 })
