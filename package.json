@@ -1,0 +1,41 @@
+{
+  "name": "timestamp-microservice",
+  "version": "1.0.0",
+  "description": "This is a project for the 'Backend Development and APIs' certification I did on freecodecamp.com",
+  "main": "server.ts",
+  "scripts": {
+    "start": "nodemon",
+    "test": "Jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/BrianJosephStudio/timestamp-microservice.git"
+  },
+  "keywords": [
+    "timestamp",
+    "service",
+    "freecodecamp",
+    "brian",
+    "ure"
+  ],
+  "author": "Brian Ure",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BrianJosephStudio/timestamp-microservice/issues"
+  },
+  "homepage": "https://github.com/BrianJosephStudio/timestamp-microservice#readme",
+  "dependencies": {
+    "@types/jest": "^29.5.12",
+    "axios": "^1.6.8",
+    "express": "^4.19.2",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "typescript": "^5.4.3"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.30",
+    "ts-node": "^10.9.2"
+  }
+}
